@@ -89,7 +89,7 @@ const Wrapper = styled.section`
 .list-container{
     background-color: var(--Listbackground);
 height:80vh;
-width:50vw;
+width:40vw;
 display:flex;
     justify-content:flex-start;
 align-items:center;
