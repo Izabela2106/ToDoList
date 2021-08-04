@@ -1,0 +1,56 @@
+root{
+    --radius:10%;
+}
+
+.light-theme{
+    --background:#EFF3F7;
+    --progressBox:#2B3A70;
+    --checkBox:#2B3A70;
+    --taskHover:#EFF3F7;
+    --Listbackground:white;
+    --progressBarInside:#20203c;
+    --progressBarOutside:#414f9d;
+    --progressBarFont:white;
+    --title:black;
+    --hr:#808080;
+        --radius:5px;
+
+    
+}
+
+.dark-theme{
+     --background:#4d4d4d;
+    --progressBox:#2B3A70;
+    --checkBox:#2B3A70;
+    --taskHover:#808080;
+    --Listbackground:#666666;
+    --progressBarInside:#20203c;
+    --progressBarOutside:#414f9d;
+        --progressBarFont:white;
+    --title:white;
+    --hr:black;
+
+        --radius:5px;
+
+
+
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+   
+
+}
+
+
+ 
