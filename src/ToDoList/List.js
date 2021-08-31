@@ -18,6 +18,7 @@ const List = () => {
   return <Wrapper className={`${theme}`}>
       <div className={`${theme}`}>
       <div className="Togglebutton" onChange={toggleTheme}>
+
           <label className="switch">
               <input type="checkbox" >
                   </input>
@@ -25,6 +26,8 @@ const List = () => {
 
               </label>
           </div>
+     <div className='container-wrapper'>
+
                 <div className="alertBoxContainer">
       {alert && <div className="alertBox">{alert_msg}</div>}
                 </div>
@@ -52,7 +55,7 @@ const List = () => {
                   <button type="submit" className="addButton"><AiFillPlusCircle/></button>
               </form>
           </header>
-<div className="removeAllBtn" onClick={removeAll}>REMOVE ALL </div>
+       <div className="removeAllBtn" onClick={removeAll}>REMOVE ALL </div>
       <div className="list-center">
           <ul className='list'>
               {tasks.map((item,index)=>{
@@ -70,6 +73,8 @@ const List = () => {
               
               </div>
 </div>
+</div>
+
       </Wrapper>
 }
 
@@ -84,17 +89,46 @@ const Wrapper = styled.section`
     align-items:center;
     background-color: var(--background);
     min-width:400px;
+    
+.container-wrapper{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    
+    
+}    
 
   
 .list-container{
-    background-color: var(--Listbackground);
+background-color: var(--Listbackground);
 height:80vh;
 width:50vw;
 display:flex;
-    justify-content:flex-start;
+justify-content:flex-start;
 align-items:center;
 flex-direction:column;
+min-width:500px;
+max-width:700px;
+    border-radius:10px;
+
+
+
     
+
+}
+.header{
+    max-width:700px;
+    padding:10px 10px;
+     min-width:500px;
+
+
+}
+    
+.list-center{
+max-width:700px;
+ min-width:500px;
+
 
 }
 
@@ -230,6 +264,10 @@ border-radius:var(--radius);
 .list{
 margin-top:2rem;
 width:40vw;
+    max-width:700px;
+    padding:1rem;
+     min-width:500px;
+
 }
 
 ul{
