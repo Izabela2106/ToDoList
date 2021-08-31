@@ -122,8 +122,7 @@ const AppProvider = ({ children }) => {
     
      const removeTask=(id)=>{
         
-        dispatch({type:"REMOVE_TASK",payload:id})
-                 dispatch({type:"HANDLE_CHECKBOX",payload:id});
+        dispatch({type:"REMOVE_TASK",payload:id}
 
           dispatch({type:"ALERT",payload:"Task removed"})
 
