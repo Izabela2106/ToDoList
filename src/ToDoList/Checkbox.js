@@ -1,7 +1,7 @@
 import React from "react";
 
-const Checkbox = ({ onClick, defaultChecked }) => (
-  <input type="checkbox" className="checkbox" onClick={onClick} defaultChecked={defaultChecked} />
+const Checkbox = ({ onChange, checked }) => (
+  <input type="checkbox" className="checkbox" onChange={onChange} checked={checked} />
 );
 
 
