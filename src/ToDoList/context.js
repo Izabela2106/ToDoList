@@ -122,9 +122,10 @@ const AppProvider = ({ children }) => {
     
      const removeTask=(id)=>{
         
-        dispatch({type:"REMOVE_TASK",payload:id}
+        dispatch({type:"REMOVE_TASK",payload:id})
 
           dispatch({type:"ALERT",payload:"Task removed"})
+          
 
         setTimeout(()=>{
                     dispatch({type:"ALERT_HIDE"})
