@@ -61,7 +61,7 @@ const List = () => {
               {tasks.map((item,index)=>{
                
                return <div className="task" key={index}>
-               <li><Checkbox className="checkbox" onClick={e=>handleCheckbox(item.id)} / > {item.name}</li>
+               <li><Checkbox className="checkbox" onChange={e=>handleCheckbox(item.id)} checked={item.done} / > {item.name}</li>
           <button className="delteButton" onClick={()=>removeTask(item.id)}>
               <AiFillDelete/>
               </button>
@@ -79,8 +79,6 @@ const List = () => {
 }
 
 const Wrapper = styled.section`
-
-
     width:100vw;
     height:100vh;
     display:flex;
@@ -98,7 +96,6 @@ const Wrapper = styled.section`
     
     
 }    
-
   
 .list-container{
 background-color: var(--Listbackground);
@@ -111,122 +108,85 @@ flex-direction:column;
 min-width:500px;
 max-width:700px;
     border-radius:10px;
-
-
-
     
-
 }
 .header{
     max-width:700px;
     padding:10px 10px;
      min-width:500px;
-
-
 }
     
 .list-center{
 max-width:700px;
  min-width:500px;
-
-
 }
-
 input.inputTitle{
 border:none;
 font-size:2rem;
-
 }
-
 input.inputTitle:focus{
 outline: none;
 text-align:center;
-
 }
-
 .input{
 width:90%;
 height:35px;
 width:40vw;
 border:2px solid var(--progressBox);
     background:var( --taskHover);
-
 &active{
 border:var(--progressBox);
 }
-
-
 }
-
-
-
-
 .done{
 background:var(--progressBox);
 border-radius:var(--radius);
 margin-top:0.5rem;
 padding:5px;
-
 }
-
 .progress{
 display:flex;
 flex-direction:row;
 color:var(--progressBarFont);
 justify-content:space-between;
-
 .progressBar{
-
     margin:10px;
 }
-
 }
 .inside{
 position:relative;
-
 height:10px;
 width:100%;
 background:var(--progressBarInside);
 border-radius:var(--radius);
 top:0px;
-
-
 }
 .outside{
 position:relative;
-
 height:10px;
 background:var(--progressBarOutside);
 border-radius:var(--radius);
 top:-10px;
-
 }
-
 .progressTitle, .progressNumbers{
 margin:10px;
 }
-
-
 .addButton{
 border:none;
 background:transparent;
 font-size:1.4rem;
 cursor:pointer;
 }
-
 .checked{
 text-decoration:line-through;
 }
-
 .form{
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:row;
 margin-top:1rem;
-
 }
-
 .addButton{
 display:flex;
 justify-content:center;
@@ -246,7 +206,6 @@ margin-bottom:0.5rem;
 hr{
     color:var(--hr);
 }
-
 .task{
 display:flex;
 justify-content:space-between;
@@ -254,31 +213,24 @@ align-items:center;
 font-size:1.3rem;
 margin: 0.5rem 0;
     
-
 }
 .task:hover{
 background:var(--taskHover);
 border-radius:var(--radius);
 }
-
 .list{
 margin-top:2rem;
 width:40vw;
     max-width:700px;
     padding:1rem;
      min-width:500px;
-
 }
-
 ul{
 list-style-type: none;
 }
-
 li{
 word-break: break-all
-
 }
-
 .delteButton{
 border:none;
 background:transparent;
@@ -297,7 +249,6 @@ margin-left:10px;
     margin: 0.5rem 0;
     padding:0.5rem;
     cursor:pointer;
-
 }
     
 .alertBox{
@@ -318,7 +269,6 @@ margin-left:10px;
         width:50vw;
         height:8vh;
          
-
         
     }
        
@@ -362,8 +312,6 @@ margin-left:10px;
            transition: 0.4s;
            border-radius:50px;
 }
-
-
 input:checked + .slider{
     background-color:#dddddd;
 }
@@ -374,8 +322,6 @@ input:checked + .slider{
                                 
                                 
                                 
-
-
 `
 
 export default List
