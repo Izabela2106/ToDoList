@@ -105,7 +105,7 @@ display:flex;
 justify-content:flex-start;
 align-items:center;
 flex-direction:column;
-min-width:500px;
+
 max-width:700px;
     border-radius:10px;
     
@@ -113,12 +113,12 @@ max-width:700px;
 .header{
     max-width:700px;
     padding:10px 10px;
-     min-width:500px;
+   
 }
     
 .list-center{
 max-width:700px;
- min-width:500px;
+
 }
 input.inputTitle{
 border:none;
