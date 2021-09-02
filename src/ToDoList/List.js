@@ -105,10 +105,16 @@ display:flex;
 justify-content:flex-start;
 align-items:center;
 flex-direction:column;
+  
+  
 
 max-width:700px;
     border-radius:10px;
     
+ @media sreen and(max-width:500px){
+   width:80vw;
+ }
+  
 }
 .header{
     max-width:700px;
@@ -221,9 +227,9 @@ border-radius:var(--radius);
 .list{
 margin-top:2rem;
 width:100%;
-    max-width:700px;
-    padding:1rem;
-     min-width:500px;
+max-width:700px;
+padding:1rem;
+
 }
 ul{
 list-style-type: none;
