@@ -86,7 +86,7 @@ const Wrapper = styled.section`
     flex-direction:column;
     align-items:center;
     background-color: var(--background);
-    min-width:400px;
+    min-width:300px;
     
 .container-wrapper{
     display:flex;
