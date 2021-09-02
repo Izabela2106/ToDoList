@@ -220,7 +220,7 @@ border-radius:var(--radius);
 }
 .list{
 margin-top:2rem;
-width:40vw;
+width:100%;
     max-width:700px;
     padding:1rem;
      min-width:500px;
