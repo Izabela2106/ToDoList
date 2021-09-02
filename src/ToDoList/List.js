@@ -124,6 +124,7 @@ max-width:700px;
     
 .list-center{
 max-width:700px;
+  width:inherit;
 
 }
 input.inputTitle{
