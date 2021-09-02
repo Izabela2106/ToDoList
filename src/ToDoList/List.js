@@ -100,7 +100,7 @@ const Wrapper = styled.section`
 .list-container{
 background-color: var(--Listbackground);
 height:80vh;
-width:50vw;
+
 display:flex;
 justify-content:flex-start;
 align-items:center;
@@ -124,7 +124,7 @@ max-width:700px;
     
 .list-center{
 max-width:700px;
-  width:inherit;
+  width:100%;
 
 }
 input.inputTitle{
