@@ -111,7 +111,7 @@ flex-direction:column;
 max-width:700px;
     border-radius:10px;
     
- @media sreen and(max-width:500px){
+ @media screen and(max-width:768px){
    width:80vw;
  }
   
